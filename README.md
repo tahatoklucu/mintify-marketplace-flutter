@@ -16,17 +16,17 @@ Canlı çalışan alt pencere destekli sepet sistemi simülasyonu ve anlık duru
 
 ## 💻 Çalıştırma Adımları
 
-# 1. GitHub deposunu bilgisayarınıza indirin (Klonlayın)
+## 1. GitHub deposunu bilgisayarınıza indirin (Klonlayın)
 git clone https://github.com/tahatoklucu/mintify-marketplace-flutter
 
-# 2. İndirdiğiniz projenin klasörünün içine girin
+## 2. İndirdiğiniz projenin klasörünün içine girin
 cd my_mintify_app
 
-# 3. Projenin çalışması için gerekli tüm paketleri ve bağımlılıkları yükleyin
+## 3. Projenin çalışması için gerekli tüm paketleri ve bağımlılıkları yükleyin
 flutter pub get
 
-# 4. Bilgisayarınıza bağlı bir simülatör veya cihaz olup olmadığını kontrol edin
+## 4. Bilgisayarınıza bağlı bir simülatör veya cihaz olup olmadığını kontrol edin
 flutter devices
 
-# 5. Uygulamayı derleyin ve simülatörde/cihazda çalıştırın
+## 5. Uygulamayı derleyin ve simülatörde/cihazda çalıştırın
 flutter run
