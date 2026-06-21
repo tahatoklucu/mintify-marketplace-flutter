@@ -9,11 +9,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // Ham JSON verilerini modele eşliyoruz (Gün 4)
   final List<CardItem> _allItems = mintifyRawJson.map((json) => CardItem.fromJson(json)).toList();
   List<CardItem> _filteredItems = [];
   
-  // Kriter: Sepet listesi ve dinamik state yönetimi (Gün 5)
   final List<CardItem> _cartItems = [];
   
   String _selectedCategory = 'All';
@@ -25,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
     _filteredItems = _allItems;
   }
 
-  // Kriter: Basit arama ve filtreleme mantığı (Gün 4)
   void _filterProducts() {
     setState(() {
       _filteredItems = _allItems.where((item) {
@@ -48,7 +45,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // Kriter: Sepet detaylarını gösteren alt pencere (Gün 5 Sepet Simülasyonu)
   void _showCartBottomSheet() {
     showModalBottomSheet(
       context: context,
@@ -90,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     setState(() {
                                       _cartItems.removeAt(index);
                                     });
-                                    setModalState(() {}); // Alt pencereyi günceller
+                                    setModalState(() {});
                                   },
                                 ),
                               );
@@ -157,7 +153,6 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          // Kriter: Asset Yönetimi - Image.asset Kullanımı (Gün 4)
           Container(
             width: double.infinity,
             height: 110,
@@ -174,7 +169,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          // Arama Çubuğu
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
             child: TextField(
@@ -190,7 +184,6 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
           ),
-          // Filtreleme Çipleri
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
             child: Row(
@@ -210,7 +203,6 @@ class _HomeScreenState extends State<HomeScreen> {
               }).toList(),
             ),
           ),
-          // Kriter: GridView ile dengeli ürün kartları tasarımı (Gün 5)
           Expanded(
             child: _filteredItems.isEmpty
                 ? const Center(child: Text('Sonuç bulunamadı.'))
@@ -219,7 +211,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     itemCount: _filteredItems.length,
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: 0.95, // Fotoğrafların dikeyde uzamaması için geniş oran seçildi
+                      childAspectRatio: 0.95,
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 10,
                     ),
@@ -230,7 +222,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         child: InkWell(
                           borderRadius: BorderRadius.circular(12),
-                          // Kriter: Sayfa geçişi ve Route Arguments veri taşıma (Gün 3)
                           onTap: () {
                             Navigator.pushNamed(context, '/detail', arguments: item);
                           },
@@ -239,7 +230,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                // Fotoğrafların taşmaması için contain ve Container sınırı eklendi
                                 Expanded(
                                   child: Container(
                                     width: double.infinity,

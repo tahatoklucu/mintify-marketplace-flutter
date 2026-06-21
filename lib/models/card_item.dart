@@ -15,7 +15,6 @@ class CardItem {
     required this.category,
   });
 
-  // Kriter: JSON simülasyonundan nesne türeten model constructor'ı (Gün 4)
   factory CardItem.fromJson(Map<String, dynamic> json) {
     return CardItem(
       id: json['id'],
@@ -28,7 +27,6 @@ class CardItem {
   }
 }
 
-// Mintify koleksiyon pazarına uygun simüle edilmiş ham JSON veri listesi (Gün 4)
 final List<Map<String, dynamic>> mintifyRawJson = [
   {
     "id": 1,

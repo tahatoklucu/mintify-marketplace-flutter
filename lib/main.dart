@@ -23,7 +23,6 @@ class MintifyApp extends StatelessWidget {
           elevation: 1,
         ),
       ),
-      // Kriter: Named Routes (Yönlendirme Tablosu) Altyapısı (Gün 3)
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),

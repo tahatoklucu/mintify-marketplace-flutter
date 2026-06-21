@@ -6,7 +6,6 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Kriter: Üst ekrandan gönderilen Route Arguments yapısını karşılama (Gün 3)
     final item = ModalRoute.of(context)!.settings.arguments as CardItem;
 
     return Scaffold(
