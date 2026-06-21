@@ -1,17 +1,15 @@
-# flutter_application_1
+# Mintify Marketplace
 
-A new Flutter project.
+## 📝 Proje Açıklaması
+Mintify, koleksiyonerler için özel olarak tasarlanmış, nadir bulunan koleksiyon kartları, Funko Pop figürleri ve çizgi romanların listelendiği mini bir katalog ve pazar yeri uygulamasıdır. 
 
-## Getting Started
+## 🚀 Proje Çıktıları ve Karşılanan Kriterler
+Stateful/Stateless widget mimarisi, GridView tabanlı ürün kartları tasarımı ve esnek arayüz elemanları.
+Named Routes düzeniyle sayfa geçişleri (`Navigator`) ve sayfalar arası veri taşıma (`Route Arguments`).
+Simüle edilmiş veri modelleri (`fromJson`) ve dinamik arama/filtreleme çubukları, `Image.asset` ile yerel varlık yönetimi.
+Canlı çalışan alt pencere (`BottomSheet`) destekli sepet sistemi simülasyonu ve anlık durum güncellemeleri.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Kullanılan Teknolojiler ve Sürümler
+* **Flutter Sürümü:** 3.22.x (veya daha güncel bir sürüm)
+* **Dart Sürümü:** 3.4.x
+* **IDE:** Visual Studio Code
