@@ -10,6 +10,6 @@ Simüle edilmiş veri modelleri (`fromJson`) ve dinamik arama/filtreleme çubukl
 Canlı çalışan alt pencere (`BottomSheet`) destekli sepet sistemi simülasyonu ve anlık durum güncellemeleri.
 
 ## 🛠️ Kullanılan Teknolojiler ve Sürümler
-* **Flutter Sürümü:** 3.22.x (veya daha güncel bir sürüm)
-* **Dart Sürümü:** 3.4.x
+* **Flutter Sürümü:** 3.24.x (Stable)
+* **Dart Sürümü:** 3.12.2
 * **IDE:** Visual Studio Code
